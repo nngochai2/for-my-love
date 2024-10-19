@@ -1,5 +1,6 @@
 import React from 'react'
 import Timer from '../components/Timer'
+import Picture from '../assets/image_1.jpg'
 
 const HomePage = () => {
 	return (
@@ -8,7 +9,7 @@ const HomePage = () => {
 				<div className="bg-white rounded-lg shadow-lg overflow-hidden">
 					<div className="md:flex">
 						<div className="md:flex-shrink-0">
-							<img className="h-48 w-full object-cover md:w-48" src="/api/placeholder/400/400" alt="Anniversary" />
+							<img className="h-48 w-full object-cover md:w-48" src={Picture} alt="Anniversary" />
 						</div>
 						<div className="p-8">
 							<Timer />
