@@ -1,9 +1,16 @@
 import React from 'react'
 import Timer from '../components/Timer'
 import Picture from '../assets/image_1.jpg'
+import Letter from '../components/Letter';
 
 const HomePage = () => {
 	const anniversaryDate = new Date(2022, 5, 1);
+	
+	const letterContent = `As I reflect on our journey together, I'm filled with an overwhelming sense of joy and gratitude. Every moment with you has been a precious gift, a treasure that I hold close to my heart.
+
+From our first meeting to this very day, our love has grown and deepened in ways I never thought possible. You've been my rock, my inspiration, and my best friend through it all.
+
+This website is a small token of my love for you - a digital scrapbook of our memories and a promise of our future together. As you explore these pages, I hope you feel the depth of my love and the excitement I have for all the adventures that await us.`;
 
 	return (
 		<div className="min-h-screen bg-pink-50 pt-16 pb-12">
@@ -20,6 +27,7 @@ const HomePage = () => {
 						</div>
 					</div>
 				</div>
+				<Letter content={letterContent} />
 			</div>
 		</div>
 	);
