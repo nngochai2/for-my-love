@@ -6,11 +6,11 @@ import Letter from '../components/Letter';
 const HomePage = () => {
 	const anniversaryDate = new Date(2022, 5, 1);
 	
-	const letterContent = `As I reflect on our journey together, I'm filled with an overwhelming sense of joy and gratitude. Every moment with you has been a precious gift, a treasure that I hold close to my heart.
+	const letterContent = `Hế lu phanh thúi. Nhân dịp 20/10 tới anh chưa biết tặng gì (với cả anh lười chuyển tiền quạ) nên anh muốn làm website này tặng em.
 
-From our first meeting to this very day, our love has grown and deepened in ways I never thought possible. You've been my rock, my inspiration, and my best friend through it all.
+Do deadlines đang dí anh căng cực căng quá nên là web ở thời điểm hiện tại chưa có gì mấy đâu. Nhưng mà web sẽ liên tục cập nhật để ra nhiều tính năng hay ho, vừa dành tặng phanh vừa để anh luyện code nữa :>
 
-This website is a small token of my love for you - a digital scrapbook of our memories and a promise of our future together. As you explore these pages, I hope you feel the depth of my love and the excitement I have for all the adventures that await us.`;
+Chúc Phanh mãi tuyệt vời như này ><`;
 
 	return (
 		<div className="min-h-screen bg-pink-50 pt-16 pb-12">
