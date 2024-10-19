@@ -1,3 +1,99 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f5;
+  color: #333;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: #ff69b4;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffb6c1;
+}
+
+.home-page {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
+.anniversary-container {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease forwards;
+}
+
+.anniversary-picture {
+  flex: 1;
+  background-image: url('/api/placeholder/400/400');
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+}
+
+.timer-container {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.timer {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .anniversary-container {
+    flex-direction: column;
+  }
+  
+  .anniversary-picture {
+    min-height: 200px;
+  }
+}
