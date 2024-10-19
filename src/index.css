@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+	scroll-behavior: smooth;
+}
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -82,18 +87,28 @@ body {
 }
 
 @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@media (max-width: 768px) {
-  .anniversary-container {
-    flex-direction: column;
-  }
-  
-  .anniversary-picture {
-    min-height: 200px;
-  }
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
 }
